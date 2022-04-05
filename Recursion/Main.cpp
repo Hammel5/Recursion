@@ -69,10 +69,10 @@ int main()
                 outFile << "List is empty." << endl;
             else outFile << "List is not empty." << endl;
         }
-        else if (command == "Reverse")
+        else if (command == "Reverse") // if reverse is inputted it will reverse the stack to the top is moved to the bottom and vice versa 
         {
             stack.head = stack.reverse(stack.head);
-            outFile << "List has been reversed";
+            outFile << "List has been reversed" << endl;
         }
         else cout << "Command not recognized." << endl; // will be outputted if no command is recognized
 

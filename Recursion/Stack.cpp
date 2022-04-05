@@ -49,7 +49,7 @@ void Stack::Pop()
 
 
 /*
-Precondition – if the item has atleast one item
+Precondition – if the list has atleast one item
 Postcondition – Returns a copy of the top item in the stack
 */
 ItemType Stack::Top()
@@ -98,6 +98,11 @@ bool Stack::IsEmpty()
 		return false;
 }
 
+
+/*
+Precondition – The stack has to have atleast two items to reverse the stack
+Postcondition – Reverses the stack and return the reversed stack 
+*/
 Node* Stack::reverse(Node* head)
 {
 	if (IsEmpty() || head->next == NULL)
